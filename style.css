@@ -1,0 +1,41 @@
+body{
+    margin:0px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0px;
+    padding: 20px;
+}
+a{
+   text-decoration:none;
+   color: black;
+}
+ul{
+    border-right: 1px solid gray;
+    margin: 0px;
+    padding: 20px;
+    width: 100px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ul{
+    padding-left: 50px;
+}
+#grid #본문{
+    padding-left: 50px;
+}
+@media(max-width:300px) {
+    #grid{
+    display: block;
+    }
+    h1{
+    border-bottom: none;
+    }
+    ul{
+    border-right: none;
+    }
+}
